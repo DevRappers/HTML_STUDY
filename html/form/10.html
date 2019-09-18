@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML</title>
+</head>
+
+<body>
+    <!--
+        입력양식의 속성들
+        autocomplete : 자동완성기능으로 on으로 켜고 off로 끌수있다.
+        placeholder  : 아무값도 입력되지 않았을때 텍스트박스위에 글짜가 희미하게 나오게하는 것
+        autofocus    : 웹페이지에 들어오면 자동으로 포커싱되게 하는것
+        required 값체크 무조건 입력하도록
+    -->
+    <form action="login.html" autocomplete="on">
+        <input type="text" name="id" placeholder="id를 입력해주세요." autofocus required>
+        <input type="password" name="password" autocomplete="off" placeholder="비밀번호를 입력해주세요.">
+        <input type="submit">
+    </form>
+</body>
+
+</html>

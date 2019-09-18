@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML</title>
+</head>
+<body>
+    <!--
+        html form에는 여러가지 버튼의 type이 존재함
+        submit : action으로 전송하기 위한 버튼
+        button : 그냥 버튼 onclick으로 이벤트 처리가 가능함.
+        reset  : 모든 input 값을 초기화 시킴 text라던지...
+    -->
+    <form action="login.html"> 
+        <input type="text">
+        <input type="submit" value="전송">
+        <input type="button" value="버튼" onclick="alert('hello')">
+        <input type="reset">
+    </form>
+</body>
+</html>

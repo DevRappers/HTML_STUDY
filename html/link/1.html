@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>link</title>
+</head>
+<body>
+    <!-- 
+        링크(link)는 <a> 태그로 만든다. 링크의 대상은 웹페이지, 파일, 이메일 등이 될 수 있음 
+        href를 빈공간으로 나두게 되면 현재 페이지로 이동하는 링크가 만들어짐.
+        자주 사용되는 속성 
+        
+        * target : 링크를 어디에서 열지 지정함/ 속성값으로는 _self, _blank, _parent, _top
+          _self        : 기본값으로 현재 페이지에서 링크를 처리한다
+          _blank       : 새창 또는 새 탭에서 링크를 처리한다 
+          _parent,_top : 웹페이지를 frameset으로 구성했을 때 사용한다
+        
+        * download : 웹브라우저의 설정에 상관없이 링크 대상을 다운로드 함.
+    -->
+    <a href="">Label1</a>
+    <!-- 
+         다운로드 예제 
+         첫번째는 image파일을 웹브라우저에서 보여주지만 
+         두번째는 image파일을 다운로드한다.
+    -->
+    <a href="image.jpg">Go</a>
+    <a href="images/image.jpg" download>Go</a>
+
+    <!-- 문서 내 특정 위치로의 링크를 걸어줄때는 #을 붙이면 해당 id를 가진 요소로 이동한다. -->
+    <a href="#result">Go to result.</a>
+
+    <p id="result">나는 result입니다.</p>
+
+    <!-- 이메일주소로의 하이퍼링크 : 이메일 주소앞에 mailto: 를 붙여줌-->
+    Contact <a href="mailto:devrappers@gmail.com">Devrappers</a>
+</body>
+</html>

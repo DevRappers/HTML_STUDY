@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML</title>
+</head>
+<body>
+    <!--
+        form 의 method속성이란 웹에서는 전송방식이 get방식 post방식이 존재하는데 
+        그 방식을 지정해주는 속성이 method속성이다.
+        get으로 보내게되면 웹사이트 주소뒤에 값이 보이게 되는 현상이 있지만, post로 보내면 그런현상이 없다.
+        보안성 측면에서는 post가 좋기때문에 개인정보를 다루는 곳에서는 post를 쓰는게 좋다.
+    -->
+    <form action="login.html">
+        <input type="text" name="id">
+        <input type="password" name="pwd">
+        <input type="submit">
+    </form>
+</body>
+</html>
